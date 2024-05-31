@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: #0d3451;
+  width: 21rem;
+  border-radius: 30px;
+  padding: 2%;
+}
+
+.logo {
+  width: 8rem;
+  margin-bottom: -48%;
+  margin-top: -28%;
+}
+
+.titleVerifyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .textContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    opacity: 0.5;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+.OTPInput {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-right: 0.75rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  background-color: #1c4f76;
+  color: #ffffff;
+  caret-color: #ffffff;
+}
+
+.OTPInput:last-child {
+  margin-right: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 7%;
+
+  .resendLink {
+    text-decoration: underline;
+  }
+}
+
+.resendEmailContainer {
+  font-size: 0.75rem;
+  color: #44b9ff;
+  cursor: pointer;
+}
+
+.disabledDiv {
+  pointer-events: none;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.buttonVerify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+  margin-top: 2%;
+  margin-bottom: 6%;
+  width: 18rem;
+  border-radius: 0.425rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #40b6fc, #0089db);
+  gap: 0.5rem;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.buttonVerify:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.buttonVerify:active {
+  background-color: #0099ff;
+  box-shadow: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 31rem;
+    border-radius: 30px;
+  }
+
+  .logo {
+    width: 12rem;
+    margin: 0;
+    margin-bottom: -20%;
+  }
+}

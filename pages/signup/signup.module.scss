@@ -1,0 +1,128 @@
+
+.signupScreenContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #001726;
+  margin-bottom: -20%;
+  color: #ffffff;
+}
+
+.newUserSignup {
+  content: " Cadastre-se";
+  color: #44b9ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signupLinkContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.newUser {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+
+}
+
+.termsOfUse {
+  cursor: pointer;
+}
+
+.termsOfUseDiv {
+  padding-bottom: 7%;
+}
+
+.welcome {
+  font-size: 30px;
+}
+
+.termsAndLinkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 150px;
+
+}
+
+@media (min-width: 375px) {
+  .signupScreenContainer
+ {
+    padding-top: 10%;
+  }
+  .logo {
+    margin-bottom: -10%;
+  }
+  .welcome {
+    margin-top: 10%;
+    font-size: 1.5rem;
+  }
+  .termsAndLinkContainer {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 412px) {
+  .signupScreenContainer
+ {
+    padding-top: 10%;
+  }
+  .logo {
+    margin-bottom: -10%;
+  }
+  .welcome {
+    margin-top: 3%;
+    font-size: 1.5rem;
+  }
+  .termsAndLinkContainer {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .signupScreenContainer
+ {
+    padding-top:5%;
+  }
+  .logo {
+    margin-bottom: -10%;
+  }
+  .welcome {
+    margin-top: 9%;
+    font-size: 2.4rem;
+  }
+  .termsAndLinkContainer {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .signupScreenContainer
+ {
+    padding-top:5%;
+  }
+  .logo {
+    margin-bottom: -10%;
+  }
+  .welcome {
+    margin-top: 9%;
+    font-size: 2.2rem;
+  }
+  .termsAndLinkContainer {
+    font-size: 1rem;
+  }
+}
+
+

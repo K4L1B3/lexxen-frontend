@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Normalize box sizing for consistent behavior across browsers */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins, padding, and borders on various elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dt,
+dd,
+hr,
+address,
+fieldset,
+legend,
+textarea,
+input,
+button,
+abbr,
+acronym,
+del,
+ins,
+mark,
+nav,
+article,
+section,
+main,
+aside,
+header,
+footer,
+dialog,
+summary,
+details,
+menu,
+datalist {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Address baseline differences for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  baseline-align: baseline;
+}
+
+/* Reset font sizes and weights for a clean slate */
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Remove default list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Set a base font size for consistency */
+body {
+  font-size: 16px; /* Adjust as needed */
+}
+
+/* Address anchor (link) text decoration */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit from body color */
+}
+
+/* Reset form elements (consider customization) */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  appearance: none; /* Remove default styles */
+}
+
+/* Remove outlining for keyboard focus */
+button,
+:focus {
+  outline: none;
+}
+
+/* Address table caption behavior */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set caption styles (customize as needed) */
+caption {
+  caption-side: bottom;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+:root {
+  --font-primary: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: var(--font-primary);
+}
+
+// .roboto-thin {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 100;
+//   font-style: normal;
+// }
+
+// .roboto-light {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// .roboto-regular {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// .roboto-medium {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// .roboto-bold {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// .roboto-black {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+// .roboto-thin-italic {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 100;
+//   font-style: italic;
+// }
+
+// .roboto-light-italic {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 300;
+//   font-style: italic;
+// }
+
+// .roboto-regular-italic {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 400;
+//   font-style: italic;
+// }
+
+// .roboto-medium-italic {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 500;
+//   font-style: italic;
+// }
+
+// .roboto-bold-italic {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 700;
+//   font-style: italic;
+// }
+
+// .roboto-black-italic {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 900;
+//   font-style: italic;
+// }

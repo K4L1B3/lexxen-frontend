@@ -1,0 +1,33 @@
+{
+  "welcome_message": "Olá mundo!",
+  "page_not_found": "Página não encontrada.",
+
+  "sign_in": "ENTRAR",
+  "sign_in_Google": "Continuar com o Google",
+  "signup" : "Criar conta",
+  "register" : "CADASTRAR",
+  "notMatch" : "passwords Not Match",
+
+  "default_placeholder": "Entre com os dados aqui",
+  "name_placeholder": "Nome completo",
+  "email_placeholder": "Endereço de e-mail",
+  "phoneNumber_placeholder": "Numero de telefone",
+  "password_placeholder": "Digite a sua senha",
+  "confirmPass_placeholder": "Confirme sua senha",
+
+
+  "welcome_back": "Bem-vindo de volta!",
+  "use_terms_privacy_police": "Termos de uso | Política de privacidade",
+
+  "send":"ENVIAR",
+
+  "check": "VERIFICAR",
+  "check_your_email":"Verifique o seu e-mail",
+  "send_4_digit": "Enviamos um código de 4 digitos para",
+  "Did_not_get_the_email?":"Não recebeu o e-mail?",
+  "send_email_again":  "Enviar novamente",
+
+  "reset_password": "Resetar senha",
+  "confirm": "CONFIRMAR"
+
+}

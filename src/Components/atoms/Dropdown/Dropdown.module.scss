@@ -1,0 +1,33 @@
+.trigger {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.label {
+  margin: 0 0.5rem;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.content {
+  min-width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}

@@ -1,0 +1,129 @@
+.sidebar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+  margin-left: 2%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+
+  h3 {
+    margin-top: 8%;
+    margin-bottom: -3%;
+    font-weight: 400;
+  }
+
+  i {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 17px;
+    box-shadow: 2px 5px 6px 0.2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.link_container {
+  display: flex;
+  align-items: flex-start;
+  padding: 4%;
+  width: 12rem;
+}
+
+.link_container:hover {
+
+  &:hover,
+  &.active {
+    box-shadow: 2px 5px 6px 0.2px rgba(0, 0, 0, 0.1);
+    width: 12rem;
+    border-radius: 20px;
+
+    .icon {
+      background-color: #4fd1c5;
+      transition: background-color 0.3s, filter 0.3s;
+      box-shadow:0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+      img {
+        filter: brightness(0) invert(1);
+        transition: filter 0.3s;
+      }
+    }
+  }
+}
+
+.first_nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.second_nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.helpBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 10%;
+  gap: 13px;
+  background-image: url("../../../../public/others/background.png");
+  width: 16rem;
+  height: 13rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  color: white;
+
+  i {
+    margin-top: -5%;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+.faqButton {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  margin-top: 5%;
+  padding: 3%;
+  width: 12rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.logoSvg {
+  width: 250px;
+  height: auto;
+}

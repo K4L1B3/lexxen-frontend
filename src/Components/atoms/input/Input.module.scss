@@ -1,0 +1,45 @@
+.inputContainer {
+  position: relative;
+  margin-top: 1.25rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.625rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.5em;
+  background: none;
+}
+
+.label {
+  position: absolute;
+  left: 0.625rem;
+  top: 1.4375rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  transform-origin: left center;
+}
+
+.labelFocused {
+  top: -1.25rem;
+  left: 0;
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+
+.icon {
+  position: absolute;
+  right: 1.875rem;
+  top: 1.25rem;
+  color: #44b9ff;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.disabled {
+  pointer-events: none;
+  display: none;
+ }
+

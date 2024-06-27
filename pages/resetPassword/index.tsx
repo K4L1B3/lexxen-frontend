@@ -1,5 +1,5 @@
 import style from "../resetPassword/resetPassword.module.scss";
-import logoIcon from "../../assets/SymbolText.svg";
+import logoIcon from "../../public/SymbolText.svg";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import ResetPasswordForm from "@/Components/molecules/reset-form/resetPasswordForm";

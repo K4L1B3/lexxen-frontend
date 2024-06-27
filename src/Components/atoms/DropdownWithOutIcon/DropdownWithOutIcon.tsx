@@ -1,6 +1,6 @@
 import React from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-import styles from "./Dropdown.module.scss";
+import styles from "./DropdownWithOutIcon.module.scss";
 import { FaStore } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 
@@ -9,12 +9,11 @@ interface DropdownProps {
   items: { label: string; onClick: () => void }[];
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ label, items }) => {
+const DropdownWithOutIcon: React.FC<DropdownProps> = ({ label, items }) => {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger className={styles.trigger}>
         <div className={styles.dropdown_inside_container}>
-          <FaStore className={styles.icon} />
           <span className={styles.label}>{label}</span>
         </div>
         <IoMdArrowDropdown className={styles.icon} />
@@ -35,4 +34,4 @@ const Dropdown: React.FC<DropdownProps> = ({ label, items }) => {
   );
 };
 
-export default Dropdown;
+export default DropdownWithOutIcon;

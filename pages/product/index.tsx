@@ -15,7 +15,7 @@ export default function Produtos() {
 
   const [rows, setRows] = useState([
     {
-      imageUrl: "https://via.placeholder.com/50", 
+      imageUrl: "https://via.placeholder.com/50",
       name: "OnePlus 7Pro",
       description: "OnePlus",
       date: "00/00/00",
@@ -67,6 +67,24 @@ export default function Produtos() {
       tag: { text: "Lorem ipsum", color: "#8a2be2" },
       isActive: false,
       onToggle: () => handleToggle(0),
+    },
+    {
+      imageUrl: "https://via.placeholder.com/50",
+      name: "OnePlus 7Pro",
+      description: "OnePlus",
+      date: "00/00/00",
+      tag: { text: "Lorem ipsum", color: "#8a2be2" },
+      isActive: false,
+      onToggle: () => handleToggle(0),
+    },
+    {
+      imageUrl: "https://via.placeholder.com/50",
+      name: "iMac Pro",
+      description: "Apple",
+      date: "00/00/00",
+      tag: { text: "Lorem ipsum", color: "#ff4500" },
+      isActive: true,
+      onToggle: () => handleToggle(1),
     },
   ]);
 
@@ -76,13 +94,16 @@ export default function Produtos() {
       <div className={style.container_act}>
         <div className={style.container_main}>
           <Header />
-          <h1 className={"tile"}>Produtos</h1>
+          <h1 className={style.title}>Produtos</h1>
+          <div className={style.horizontal_line}></div>
           <div className={style.input_container}>
-            <input type="text" className={style.input_component} />
-            <input type="text" className={style.input_component} />
-            <button className={style.button_component}>+ Novo Produto</button>
+            <div className={style.inputs_ajust}>
+              <input type="text" className={style.input_component} />
+              <input type="text" className={style.input_component} />
+              <button className={style.button_component}>+ Novo Produto</button>
+            </div>
+            <Table rows={rows} />
           </div>
-          <Table rows={rows} />
         </div>
         <div className={style.footer}>
           <p>© 2023 , feito com ❤️ by Lexxen Hub</p>

@@ -2,7 +2,7 @@ import React, { ChangeEvent, useState } from "react";
 import style from "./OTPInput.module.scss";
 import { Button } from "@/Components/atoms/button/index";
 import { useTranslation } from "react-i18next";
-import Logo from "../../../../assets/SymbolText.svg";
+import Logo from "../../../../public/SymbolText.svg";
 import Image from "next/image";
 
 interface OTPInputProps {

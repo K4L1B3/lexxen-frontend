@@ -1,7 +1,7 @@
 import { Button } from "@/Components/atoms/button/index";
 import { Input } from "@/Components/atoms/input/index";
 import Image from "next/image";
-import logo from "../../../../assets/SymbolText.svg";
+import logo from "../../../../public/SymbolText.svg";
 import style from "./EmailForm.module.scss";
 import { useTranslation } from "react-i18next";
 

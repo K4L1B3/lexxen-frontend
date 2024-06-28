@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import style from "./checkout.module.scss";
 import Image from "next/image";
 import { DropdownWithOutIcon } from "@/Components/atoms/DropdownWithOutIcon";
@@ -10,26 +10,33 @@ import logo from "../../public/logo/logoLexxen.svg";
 import arrowViewAll from "../../public/checkout-icons/arrowSeeAllCheckout.svg";
 import googledoc from "../../public/Produtos/google-home.png";
 import iphone from "../../public/Produtos/iphone.png";
+import creditCardicon from "../../public/checkout-icons/mastercardBandeira.svg";
+import creditCardiconblack from "../../public/checkout-icons/cartaoDeCreditoCinza.svg";
+import arrowButtonCheckout from "../../public/checkout-icons/arrowButtonCheckout.svg";
 
-// Exemplo de produtos para a lista de produtos
 const products = [
   {
     id: 1,
     name: "Lorem ipsum dolor sit",
-    image: googledoc, // Caminho de exemplo, ajuste conforme necessário
+    image: googledoc,
     price: 299.0,
     originalPrice: 999.0,
   },
   {
     id: 2,
     name: "Lorem ipsum dolor sit",
-    image: iphone, // Caminho de exemplo, ajuste conforme necessário
+    image: iphone,
     price: 299.0,
     originalPrice: 999.0,
   },
 ];
 
 export default function Checkout() {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+  };
+
+
   return (
     <div className={style.container_component}>
       {/* Lado Esquerdo */}
@@ -115,13 +122,13 @@ export default function Checkout() {
               <div className={style.product_info}>
                 <p>{product.name}</p>
                 <div className={style.product_quantity}>
-                  <button className={style.quantity_button}>-</button>
-                  <span>1</span>
-                  <button className={style.quantity_button}>+</button>
+                  <button className={style.quantity_button_left}>-</button>
+                  <span className={style.product_quantity_number}>1</span>
+                  <button className={style.quantity_button_right}>+</button>
                 </div>
               </div>
               <div className={style.product_price}>
-                <span>R${product.price}</span>
+                <span className={style.price}>R${product.price}</span>
                 <span className={style.original_price}>
                   R${product.originalPrice}
                 </span>
@@ -134,48 +141,68 @@ export default function Checkout() {
       {/* Lado Direito */}
       <div className={style.right_side_container}>
         <div className={style.container_outside_form}>
-          <Image src={logo} alt={"LOGO LEXXEN"} />
-          <form className={style.form_div}>
+          <Image src={logo} alt={"LOGO LEXXEN"} className={style.image_logo} />
+          <form onSubmit={handleSubmit} className={style.form_div}>
             <div className={style.form_div_p1}>
-              <h2>informações básicas</h2>
+              <h2>Informações básicas</h2>
               <div className={style.container_input_div_p1}>
                 <div className={style.input_div}>
                   <label>Email</label>
-                  <input type="text" />
+                  <input type="text" placeholder="     Exemple@gmail.com" />
                 </div>
                 <div className={style.input_div}>
                   <label>País</label>
-                  <DropdownWithOutIcon label={"Brasil"} items={[]} />
+                  <DropdownWithOutIcon
+                    label={"Brasil"}
+                    items={[]}
+                    NameCSS={style.dropDownStyle}
+                  />
                 </div>
                 <div className={style.input_div}>
                   <label>Endereço</label>
-                  <input type="text" />
+                  <input type="text" placeholder="     Avenida paulista, 459" />
                 </div>
               </div>
             </div>
             <div className={style.form_div_p2}>
               <div className={style.container_input_div_p2}>
                 <h2>Detalhes do Pagamento</h2>
-                <div>
+                <div className={style.credit_Card_container}>
                   <label>Número do cartão</label>
-                  <input type="text" />
+                  <input type="text" placeholder="      7563 4592 4863 9328" />
+                  <Image
+                    src={creditCardicon}
+                    alt={"credit"}
+                    className={style.credit_card_flag}
+                  />
                 </div>
                 <div className={style.details_input_container}>
-                  <div className={style.details_input}>
-                    <label>Nome</label>
-                    <input type="text" />
-                  </div>
-                  <div className={style.details_input}>
-                    <label>Data</label>
-                    <input type="text" />
-                  </div>
-                  <div className={style.details_input}>
-                    <label>CVV</label>
-                    <input type="text" />
+                  <div className={style.input_fields}>
+                    <div className={style.details_input}>
+                      <label>Nome</label>
+                      <input type="text" placeholder=" Alexandre L Siqueira" />
+                    </div>
+                    <div className={style.details_input}>
+                      <label>Data</label>
+                      <input type="text" placeholder=" 05/28" />
+                    </div>
+                    <div className={style.details_input}>
+                      <label>CVV</label>
+                      <input type="text" placeholder=" 445" />
+                      <Image
+                        src={creditCardiconblack}
+                        alt={"credit"}
+                        className={style.credit_card_blackflag}
+                      />
+                    </div>
                   </div>
                   <button className={style.button_pay}>
                     <span>Pagar</span>
-                    <i>ICONE</i>
+                    <Image
+                      src={arrowButtonCheckout}
+                      alt={"credit"}
+                      className={style.arrowButtonCheckout}
+                    />
                   </button>
                 </div>
               </div>
